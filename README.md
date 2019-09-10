@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Configure GraghQL
+
+### `npm i graghql react-apollo graphql-tag apollo-client apollo-link-http apollo-cache-inmemory`
+
 In the project directory, you can run:
 
 ### `npm start`
