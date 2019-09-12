@@ -10,6 +10,7 @@ export const Container = styled.button.attrs({
   height: 40px;
   padding: 0 10px;
   cursor: pointer;
+  min-width: 80px;
 
   &:hover {
     background: #323A55;
