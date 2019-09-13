@@ -1,8 +1,6 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/react-hooks';
 
-import './App.css';
-
 import client from './services/api';
 import Routes from './routes';
 
@@ -15,10 +13,10 @@ const Nav = LazyImport({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="App">
+      <>
         <Nav />
         <Routes />
-      </div>
+      </>
     </ApolloProvider>
   );
 }
