@@ -1,21 +1,23 @@
 import React from 'react';
-import './App.css';
-
 import { ApolloProvider } from '@apollo/react-hooks';
 
-// import client from './graphql';
-// import Todo from './pages/Todo';
+import './App.css';
 
 import client from './services/api';
-import Product from './pages/Product';
+import Routes from './routes';
+
+import LazyImport from './components/LazyImport';
+
+const Nav = LazyImport({
+  loader: () => import('./components/Nav' /* webpackChunkName: 'nav' */),
+});
 
 function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <h2>Apollo Application <span role="img" aria-label="foguete">🚀</span></h2>
-        <Product />
-        {/* <Todo /> */}
+        <Nav />
+        <Routes />
       </div>
     </ApolloProvider>
   );
