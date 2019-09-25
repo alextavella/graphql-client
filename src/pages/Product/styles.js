@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 30px 20px 0;
@@ -19,7 +19,7 @@ export const ListItem = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   > li {
     background: white;
     border-radius: 4px;
@@ -34,7 +34,8 @@ export const ListItem = styled.ul`
       margin-bottom: 0;
     }
 
-    strong, span {
+    strong,
+    span {
       display: block;
     }
 
@@ -42,11 +43,15 @@ export const ListItem = styled.ul`
       width: 130px;
       height: 130px;
     }
-    img + strong {
+    img + div {
       margin-left: 20px;
     }
+
     strong {
       color: black;
+    }
+    span {
+      color: gray;
     }
   }
 `;
